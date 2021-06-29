@@ -6,17 +6,17 @@ This is to establish the common practice that the Legato team uses. These comman
 
 ## Notes
 
-Any time chevrons are used, they are only for example, don't include them in your commands. eg: <branch-name> should never be used, this is just a hypothetical name for a branch, like login-fix or something. No command requires chevrons.
+Any time chevrons are used, they are only for example, don't include them in your commands. eg: branch-name should never be used, this is just a hypothetical name for a branch, like login-fix or something. No command requires chevrons.
 
 # The Commands
 
 ## Creating a New Branch
 
-### git checkout -b <branch-name>
+### git checkout -b branch-name
 
 -b creates a new branch. Create all of your code on this branch, not on master. A new branch should always be made when the previous branch is pushed and merged.
 
-### git checkout <branch-name>
+### git checkout branch-name
 
 This switches between branches. If you need to go back to master, you can use git checkout master
 
@@ -24,7 +24,7 @@ This switches between branches. If you need to go back to master, you can use gi
 
 ### git add .
 ### git commit -m "comment"
-### git push -u origin <branch-name>
+### git push -u origin branch-name
 
 ## IMPORTANT
 
@@ -49,7 +49,7 @@ Go ahead and delete your branch, this can be done with a few commands:
 
 ### git checkout master
 ### git pull
-### git branch -d <The-branch-you-just-merged>
+### git branch -d The-branch-you-just-merged
 
 If you get an error deleting the branch, you can use -D for a forceful delete, but make sure you know what you're doing before you delete anything.
 
@@ -64,7 +64,7 @@ This will save all of your local branch changes. THIS IS IMPORTANT.
 
 ## git checkout master
 ## git pull
-## git checkout <the-branch-you-just-came-from>
+## git checkout the-branch-you-just-came-from
 ## git stash pop
 
 This last command will take your local changes and fit them in with the changes made to the most recent branch.
@@ -75,6 +75,6 @@ If two people were working on the same screen, you'll likely have a couple merge
 
 If you make a change to your branch, but make a regular commit instead of using --amend, you can fix this with:
 
-## git reset --soft HEAD~<x> && git commit -m "<something>"
+## git reset --soft HEAD~x && git commit -m "something"
 
 This will push all of your commits into one. Make sure x is the accurate number of commits you have.
