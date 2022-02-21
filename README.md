@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is to establish the common practice that the Legato team uses. These commands will be the main focus of how we use Github, at least for now
+This is to establish the common practice that most teams use. These commands will be the main focus of how we use Github, at least for now
 
 ## Notes
 
